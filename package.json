@@ -1,0 +1,24 @@
+{
+  "name": "parcel-tailwind-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "parcel *.pug",
+    "build": "parcel build *.pug"
+
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.5.1",
+    "style": "0.0.3"
+  },
+  "devDependencies": {
+    "postcss-import": "^12.0.1",
+    "postcss-nested": "^4.2.3",
+    "pug": "^3.0.0",
+    "tailwindcss": "^1.8.2"
+  }
+}
