@@ -8,7 +8,7 @@
     "clean": "rm -rf .cache dist",
     "serve": "parcel *.pug",
     "build": "parcel build *.pug",
-    "release": "yarn clean && yarn build && release-it",
+    "release": "release-it",
     "snap": "git add -A && git commit -m 'Snapshot'",
     "caddy": "caddy file-server --browse --root ./dist/ --listen localhost:1234"
   },
