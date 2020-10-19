@@ -4,13 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "yarn build",
+    "clean": "rm -rf .cache dist",
     "serve": "parcel *.pug",
     "build": "parcel build *.pug",
-    "release": "release-it"
+    "release": "yarn clean && yarn build && release-it",
+    "snap": "git add -A && git commit -m 'Snapshot'",
+    "caddy": "caddy file-server --browse --root ./dist/ --listen localhost:1234"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Felix Fischer <kontakt@felixfischer.com>",
+  "license": "AGPL-3.0-or-later",
   "dependencies": {
     "jquery": "^3.5.1",
     "style": "0.0.3"
