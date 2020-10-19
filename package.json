@@ -7,7 +7,7 @@
     "test": "yarn build",
     "clean": "rm -rf .cache dist",
     "serve": "parcel *.pug",
-    "build": "parcel build *.pug",
+    "build": "parcel build *.pug --no-source-maps && du -sh dist",
     "release": "release-it",
     "snap": "git add -A && git commit -m 'Snapshot'",
     "caddy": "caddy file-server --browse --root ./dist/ --listen localhost:1234"

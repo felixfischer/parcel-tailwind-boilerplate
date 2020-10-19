@@ -1,8 +1,14 @@
 module.exports = {
     future: {
         removeDeprecatedGapUtilities: true,
+        purgeLayersByDefault: true,
     },
-    purge: [],
+    purge: [
+        './src/*.pug',
+        './src/script/*',
+        './src/style/*',
+        './src/template/*',
+    ],
     theme: {
         extend: {},
     },
