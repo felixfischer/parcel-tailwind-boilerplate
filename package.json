@@ -1,6 +1,6 @@
 {
   "name": "parcel-tailwind-boilerplate",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -36,7 +36,9 @@
   },
   "release-it": {
     "git": {
-      "commit": false
+      "commit": false,
+      "tag": true,
+      "push": true
     },
     "github": {
       "release": false
