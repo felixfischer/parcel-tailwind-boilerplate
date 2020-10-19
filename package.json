@@ -12,6 +12,13 @@
     "snap": "git add -A && git commit -m 'Snapshot'",
     "caddy": "caddy file-server --browse --root ./dist/ --listen localhost:1234"
   },
+  "keywords": [
+    "static",
+    "website",
+    "parcel",
+    "tailwind",
+    "jamstack"
+  ],
   "author": "Felix Fischer <kontakt@felixfischer.com>",
   "license": "AGPL-3.0-or-later",
   "dependencies": {
@@ -24,7 +31,7 @@
     "postcss-nested": "^4.2.3",
     "pug": "^3.0.0",
     "release-it": "^14.2.0",
-    "tailwindcss": "^1.8.2"
+    "tailwindcss": "^1.9.5"
   },
   "release-it": {
     "github": {
