@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "parcel *.pug",
-    "build": "parcel build *.pug"
+    "build": "parcel build *.pug",
+    "release": "release-it"
   },
   "author": "",
   "license": "ISC",
@@ -19,6 +20,15 @@
     "postcss-import": "^12.0.1",
     "postcss-nested": "^4.2.3",
     "pug": "^3.0.0",
+    "release-it": "^14.2.0",
     "tailwindcss": "^1.8.2"
+  },
+  "release-it": {
+    "github": {
+      "release": true
+    },
+    "npm": {
+      "publish": false
+    }
   }
 }
