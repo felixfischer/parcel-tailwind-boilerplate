@@ -35,6 +35,9 @@
     "tailwindcss": "^1.9.5"
   },
   "release-it": {
+    "git": {
+      "commit": false
+    },
     "github": {
       "release": false
     },
