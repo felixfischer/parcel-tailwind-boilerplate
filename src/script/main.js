@@ -1,12 +1,18 @@
-import $ from 'jquery'
+import 'alpinejs'
 
 const data = require('../data.yml')
 
-function main() {
-    $(document).ready(function () {
-        // jQuery is available
-        // console.debug(data)
-    })
+function ready(fn) {
+    if (document.readyState != 'loading') {
+        fn()
+    } else {
+        document.addEventListener('DOMContentLoaded', fn)
+    }
 }
 
-main()
+function main() {
+    // Ready
+    // console.debug('ready')
+}
+
+ready(main)
